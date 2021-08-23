@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <style>
+        header
+        {
+            text-align:center;
+            background-color:skyblue;
+            color:white;
+        }
+        footer
+        {
+            text-align:center;
+            background-color:pink;
+            color:white;
+        }
+    </style>
 </head>
 <body>
-$END$
+    <header>
+        <h1>Employee Home Page</h1>
+        <nav>
+            <a href="#">Home</a>|
+            <a href="{% url 'empregl'%}">SignUp</a>|
+            <a href="{% url 'showallempl'%}">ViewAllEmployees</a>|
+            <a href="{% url 'showempl'%}">ViewEmployee</a>
+        </nav>
+    </header>
+    <hr>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr>
+    <footer>
+        <h3>Copyright@AshokIt</h3>
+    </footer>
 </body>
 </html>
