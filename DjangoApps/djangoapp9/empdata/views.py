@@ -35,6 +35,51 @@ def showoneempformv(request):
 
 def searchemp(request):
     # 1.Get emailid from html form
+    formEmail=request.GET.get('n1')
     # 2.Check emailid is there in db or not
     # 3.Prepare response
-    pass
+    try:
+        ob1 = Employee.objects.get(email=formEmail)
+        return render(request, 'empshow.html',{'e':ob1})
+    except ObjectDoesNotExist:
+        return render(request, 'empnotfound.html',{'mail':formEmail})
+
+def updateempformv(request):
+    return render(request, 'updateempform.html')
+def updateprocess(request):
+    # 1.Get emailid from html form
+    formEmail = request.GET.get('n1')
+    # 2.Check emailid is there in db or not
+    # 3.Prepare response
+    try:
+        ob1 = Employee.objects.get(email=formEmail)
+        return render(request, 'empedit.html', {'e': ob1})
+    except ObjectDoesNotExist:
+        return render(request, 'empnotfound.html', {'mail': formEmail})
+
+def editprocess(request):
+    # 1.Get data from html form
+    v1 = request.GET.get('n1')
+    v2 = request.GET.get('n2')
+    v3 = request.GET.get('n3')
+    v4 = request.GET.get('n4')
+    v5 = request.GET.get('n5')
+    # 2.Prepare Employee model object
+    emp1 = Employee(email=v1, password=v2, fullName=v3, city=v4, salary=v5)
+    emp1.save()
+    return render(request, 'empshow.html',{'e':emp1})
+
+def deleteempformv(request):
+    return render(request, 'deleteempform.html')
+def deleteprocess(request):
+    # 1.Get emailid from html form
+    formEmail = request.GET.get('n1')
+    # 2.Check emailid is there in db or not
+    # 3.Prepare response
+    try:
+        ob1 = Employee.objects.get(email=formEmail)
+        ob1.delete()
+        employees = Employee.objects.all()
+        return render(request, 'showallemp.html', {'emps': employees})
+    except ObjectDoesNotExist:
+        return render(request, 'empnotfound.html', {'mail': formEmail})

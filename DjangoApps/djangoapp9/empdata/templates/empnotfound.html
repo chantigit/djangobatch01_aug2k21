@@ -18,17 +18,16 @@
 </head>
 <body>
     <header>
-        <h1>Employee Home Page</h1>
+        <h1>Error Page</h1>
         <nav>
-            <a href="#">Home</a>|
-            <a href="{% url 'empregl'%}">SignUp</a>|
-            <a href="{% url 'showallempl'%}">ViewAllEmployees</a>|
-            <a href="{% url 'showempl'%}">ViewEmployee</a>|
-             <a href="{% url 'updateempl'%}">UpdateEmployee</a>|
-             <a href="{% url 'deleteempl'%}">DeleteEmployee</a>
+            <a href="{% url 'homel'%}">Home</a>
         </nav>
     </header>
     <hr>
+
+    <div style="color:red;">
+        {{mail}},  Emailid is not there in DB
+    </div>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br>
     <hr>
