@@ -83,3 +83,17 @@ def deleteprocess(request):
         return render(request, 'showallemp.html', {'emps': employees})
     except ObjectDoesNotExist:
         return render(request, 'empnotfound.html', {'mail': formEmail})
+
+def emploginv(request):
+    return render(request,'empsignin.html')
+
+def emploginprocess(request):
+    v1 = request.GET.get('n1')
+    v2 = request.GET.get('n2')
+    try:
+        emp=Employee.objects.get(email=v1,password=v2)
+        msg=emp.fullName+", Your login done"
+        return render(request, 'emploginsuccess.html', {'key1': msg})
+    except ObjectDoesNotExist:
+        msg = "Invalid mailid or password"
+        return render(request, 'emploginerror.html', {'key1': msg})
