@@ -9,6 +9,7 @@ def homev(request):
             print('Form Validation is Done')
             print('Your full name is:',form.cleaned_data['fullName'])
             print('Your age is:', form.cleaned_data['age'])
+            print('Your city is:', form.cleaned_data['city'])
             print('Your email is:', form.cleaned_data['email'])
             print('Your password is:', form.cleaned_data['password'])
             print('Your address is:', form.cleaned_data['address'])
