@@ -41,6 +41,11 @@
              <td>{{e.fullName}}</td>
              <td>{{e.city}}</td>
              <td>{{e.salary}}</td>
+            <td>
+                <a href="{% url 'deleteprocess' n1=e.email %}">
+                    delete
+                </a>
+            </td>
         </tr>
         {% endfor %}
     </table>
