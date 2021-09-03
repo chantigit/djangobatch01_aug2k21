@@ -71,18 +71,19 @@ def editprocess(request):
 
 def deleteempformv(request):
     return render(request, 'deleteempform.html')
-def deleteprocess(request):
+def deleteprocess(request,n1):
     # 1.Get emailid from html form
-    formEmail = request.GET.get('n1')
+    #formEmail = request.GET.get('n1')
     # 2.Check emailid is there in db or not
     # 3.Prepare response
     try:
-        ob1 = Employee.objects.get(email=formEmail)
+        print('n1=',str(n1))
+        ob1 = Employee.objects.get(email=str(n1))
         ob1.delete()
         employees = Employee.objects.all()
         return render(request, 'showallemp.html', {'emps': employees})
     except ObjectDoesNotExist:
-        return render(request, 'empnotfound.html', {'mail': formEmail})
+        return render(request, 'empnotfound.html', {'mail': str(n1)})
 
 def emploginv(request):
     return render(request,'empsignin.html')

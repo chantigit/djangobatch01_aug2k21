@@ -17,5 +17,5 @@ urlpatterns = [
     url(r'updateprocess/',updateprocess,name='updateprocess'),
     url(r'editprocess/',editprocess,name='editprocess'),
     url(r'deleteempform/', deleteempformv, name='deleteempl'),
-    url(r'deleteprocess/(?P<n1>\w+)', deleteprocess, name='deleteprocess'),
+    url(r'deleteprocess/(?P<n1>\w+)/$', deleteprocess, name='deleteprocess'),
 ]
