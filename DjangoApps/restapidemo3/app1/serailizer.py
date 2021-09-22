@@ -1,8 +1,5 @@
 from rest_framework import serializers
-
 from app1.models import Employee
-
-
 class EmployeeSerializer(serializers.Serializer):
     id=serializers.IntegerField()
     fullName=serializers.CharField(max_length=40)
