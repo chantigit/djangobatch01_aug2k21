@@ -22,7 +22,7 @@ Project name : restapidemo4
 		PUT 				http://127.0.0.0:8000 /studentapi/				: Updating object
 		
 		
-		DELETE				http://127.0.0.0:8000 /studentapi/				:Deleting object
+		DELETE				http://127.0.0.0:8000 /studentapi/				:  Deleting object
 		
 
 from django.db import models

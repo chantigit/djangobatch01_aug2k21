@@ -1,4 +1,3 @@
-
 import io
 from rest_framework.parsers import JSONParser
 from .models import Student
