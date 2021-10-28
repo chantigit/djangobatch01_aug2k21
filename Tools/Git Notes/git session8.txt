@@ -1,0 +1,131 @@
+Session 4:
+==========
+Q1.How many ways we can use git client ?
+Ans:
+	1.windows command prompt	(Given by MS & DOS commands)
+	2.git bash(CUI)			(Given by GitHub & unix commands)
+	3.git gui(Drag & Drop)
+	4.IDE's
+		->Eclispe	
+		->Spring Tool Suite
+
+Working with git branches:
+__________________________
+1.git branch			: display all current branches
+2.git branch <branchname>	: creating a new branch
+3.git checkout <branchname>	: moving into a branch	(*)
+4.git checkout -b <branchname>	: creating a new branch & moving into a branch	(*)
+5.git merge <branchname>	: merging branches
+
+
+Session 5:
+==========
+1.git branch -d <branchname>	:	Deleting branches
+2.git commit -am "commit msg"	:	add + commit	(Work for only exisiting files)
+3.rm Vs git rm			
+4.git checkout  filename	:	undo file from working dir
+5.mv Vs git mv		
+6. .gitignore file use
+
+Q1.	What files are by default not tracked by GIT ?
+Ans:	empty folder,image,audio,video
+
+Q2:	Can we make restrict to do not tracked few files by GIT?
+Ans:	Yes,by creating .gitignore file
+
+
+Session 6:
+==========
+Q1.Diff b/w merge & rebase ?
+
+
+Session 7:
+==========
+Q1.How can delete a commmit change in our application ?
+
+Ans:
+	git	revert	SHA1
+
+Q2.How can I roll back my previous 3 commits locally in a branch? In other words, how can 
+I create a branch without my latest 3 commits (assume I have the SHA of that commit from git log)?
+
+Ans:
+
+git checkout -b new_branch SHA1
+
+	{OR}
+
+git checkout -b new_branch HEAD~3
+
+Q3.What is stash ?
+
+	Def:store (something) safely in a hidden or secret place which is used in future.
+	1.Moving content into stash
+		git stash save 'commit msg'
+	Note:To know how many stashes are exist
+
+		git stash list
+	2.Getting content from stash
+
+		1.copy +paste	=> git stash apply stashid
+		
+		2.cut + paste	=> git stash pop stashid
+
+	3.Deleting stash area
+		
+		1.git stash drop stashid	(delete specific stash)
+
+		2.git stash clear		(delete all stashes)
+
+
+
+Q4.Deleting git tracks id ?
+
+	git	reset	--soft	SHA1		(SHA1 is deleted from local dir)
+
+	git	reset	--mixed	SHA1		(SHA1 is deleted from local+stage dir)
+
+	git	reset	--hard	SHA1		(SHA1 is deleted from local+stage+working dir)
+
+Session 7:
+==========
+
+Q5.How Git is used from Eclispe ?
+
+Ans:
+
+Step1:TL create empty repo
+Step2:TL open eclispe & created project structure then initialize current project into the above repo
+Step3:Send repo URL & Send repo invitation to all Team members
+Step4:TM accept the invitation 
+Step5:TM clone the project from repo into working dir
+Step6:TM create a project in eclispe by importing project from working dir
+Step7:Add his work on that repo & do commit & push operations
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Rerpository Tools:
+==================
+1.Git
+2.Bit Bucket	(99 % same commands from GIT)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+Project1:	CRUD applications using Django MVT arch
+			
+			2 existing project references
+			Task1: CRUD application with "PhoneBook Application"  
+			Task2: CRUD application with "HotelRoom Application"
+
+Project2: Django with restful webservices  (Session Management Tech)
+
+			User Management Module 
+			1.Without security
+			2.With security
+
+
+Project3:	Ecomm application 
+
+			Product Management
+=======================================================================
+1.Model preparation
+2.View preparation  (FBV/CBV)
+3.Template preparation  
+
+Reference Project1 : djangoapp9
+Reference Project2 : djangoapp17

@@ -1,0 +1,15 @@
+1.git config --list
+2.git log
+3.git log --oneline
+4.git show
+5.git show SHA1
+
+	Filtering logs
+
+6.git log --since=date
+7.git log --until=date
+8.git log --author='name'
+
+	Diff b/w commits
+
+9.git diff SHA1..SHA1

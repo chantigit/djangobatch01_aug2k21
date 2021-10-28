@@ -1,0 +1,127 @@
+Team Leader Workflow:
+=====================
+Day1:
+=====
+1.Signin into his account & create a repository for our current project
+	repository name	= practoapp1
+	repository type = public
+	1.Public
+		Anyone on the internet can see this repository. 
+		You choose who can commit.
+	2.Private
+		You choose who can see and commit to this repository.
+	click on create repository
+2.He creates a project structure for our project
+3.He open git bash in current folder & exeuctes following commands
+	git config --global user.name  "username"			(Once)
+	git config --global user.email "urmailid"			(Once)
+	git init
+	git add .
+	git commit -m "first commit"
+	git remote add origin https://github.com/chantigit/practoapp1.git	(Once)
+	git push -u origin master
+4.Refresh on browser in GitHub account & verify project structure is affected or not
+5.TL giving permissions to "who(TM) can commit"
+
+	
+
+	->Settings->Manage Access->Password=urpaswd->Invite a collobarator->Give all mailid one by one
+	->Here all team members must accept the invitations to commit the code
+
+6.Send Repository URL to all team members through mailid.
+	URL	=>	https://github.com/Chanti555/SBIApp.git
+
+Day2:
+====	
+	git pull origin master
+	OPEN UR PROJECT & DO U CURRENT DAY WORK 
+	git init
+	git status	(red)
+	git add .
+	git status	(green)
+	git commit -m "Commit Msg"
+	git push origin master
+
+Team Member Workflow:
+=====================
+Day1:
+====
+->Create a empty folder: name =	SBIApp
+->Clone the project from repository	(Only once he has to do)
+	git clone  URL
+->Team Member work on Day1:
+	Open the project folder & add some code in file or create new file
+->Do following commands from bash
+	right click on currect directory & open bash
+
+	git config --global user.name  "username"			(Once)
+	git config --global user.email "urmailid"			(Once)
+	git init
+	git status	(red)
+	git add .
+	git status	(green)
+	git commit -m "added some code in x file"
+	git push origin master
+
+Day2:
+====	
+	git pull origin master
+	OPEN UR PROJECT & DO U CURRENT DAY WORK 
+	git init
+	git status	(red)
+	git add .
+	git status	(green)
+	git commit -m "added some code in y,z file"
+	git push origin master
+
+Day3:
+====	
+	git pull origin master
+	OPEN UR PROJECT & DO U CURRENT DAY WORK 
+	git init
+	git status	(red)
+	git add .
+	git status	(green)
+	git commit -m "added some code in a,b,c file"
+	git push origin master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Team Leader/Git Admin/Team Manager GitHub EmailId/UserName:
+===========================================================
+lavudyachanti@gmail.com
+
+Team Members GitHub  EmailId/UserName:
+=======================================
+naresh.greddy666@gmail.com
+goparapumahesh9182@gmail.com
+kotaanilkumar1994@gmail.com
+krishna.vamshi0109@gmail.com
+pavaniatluri47@gmail.com
+srikanthn916@gmail.com
+sivakrishnaneelam@gmail.com
+
+
+

@@ -1,0 +1,17 @@
+1) git init
+2) git status
+3) git config --global user.name "YourName"
+4) git config --global user.email "YourMail"
+5) git config --global color.ui true
+6) git config --list
+7) git add *
+8) git commit -m "Commit Text"
+9) git log
+10) git git show 6digits
+11) git log --oneline
+12) git log --since = 2020-07-01
+13) git log --until = 2020-07-01
+14) git log --author = "chanti"
+15) git log --grep ="index"
+16) git diff Number1..Number2
+

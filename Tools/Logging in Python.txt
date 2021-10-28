@@ -10,21 +10,6 @@ Error 	: This tells that due to a more serious problem, the software has not bee
 Critical : This tells serious error, indicating that the program itself may be unable to continue running
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #DIWEC
 
 import logging

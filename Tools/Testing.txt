@@ -1,0 +1,41 @@
+Testing in Python:
+==================
+Developer roles & respobilities:
+
+	1.Jira	:	Task will be assigned to you  
+				TimeLines of task : Story Points
+				->  Ticket Number 	: 	455 
+				->  User Story		:	customer signup api
+	
+	2.Git	:   Pull the latest code from current branch
+				Create a child branch acc to your task : 455_customersignup
+		
+	3.Pycharm: 	Open code & start writing for customer signup api
+	
+				-> Prepare model class
+				-> Register model class into admin 
+				-> Prepare serializer
+						=> Prepare validations
+				-> Prepare views
+						=> Prepare logs acc to your requirements
+				-> Prepare testcases in tests.py
+				
+				-> Register views into urls.py
+				
+				-> Do migrations, Create super user , Run the application
+				
+	4.Test API by postman/curl/httpie/browsable api/python client app using requests module
+		Collect Postman collection file & Postman environment file (Share to team leader)
+	
+	5.Run all test cases
+	
+	6.Git	: You have to push above code into your child branch
+			: You have raise MR/PR to your team leader
+			
+	
+https://docs.python.org/3/library/unittest.html
+
+
+http://www.tomchristie.com/rest-framework-2-docs/api-guide/testing
+
+https://scotch.io/tutorials/build-a-rest-api-with-django-a-test-driven-approach-part-1

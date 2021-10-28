@@ -1,0 +1,69 @@
+Session 4:
+==========
+Q1.How many ways we can use git client ?
+Ans:
+	1.windows command prompt	(Given by MS & DOS commands)
+	2.git bash(CUI)			(Given by GitHub & unix commands)
+	3.git gui(Drag & Drop)
+	4.IDE's
+		->Eclispe	
+		->Spring Tool Suite
+
+Working with git branches:
+__________________________
+1.git branch			: display all current branches
+2.git branch <branchname>	: creating a new branch
+3.git checkout <branchname>	: moving into a branch	(*)
+4.git checkout -b <branchname>	: creating a new branch & moving into a branch	(*)
+5.git merge <branchname>	: merging branches
+
+
+Session 5:
+==========
+1.git branch -d <branchname>	:	Deleting branches
+2.git commit -am "commit msg"	:	add + commit	(Work for only exisiting files)
+3.rm Vs git rm			
+4.git checkout  filename	:	undo file from working dir
+5.mv Vs git mv		
+6. .gitignore file use
+
+Q1.	What files are by default not tracked by GIT ?
+Ans:	empty folder,image,audio,video
+
+Q2:	Can we make restrict to do not tracked few files by GIT?
+Ans:	Yes,by creating .gitignore file
+
+
+Session 6:
+==========
+Q1.Diff b/w merge & rebase ?
+Q2.Use of git revert ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

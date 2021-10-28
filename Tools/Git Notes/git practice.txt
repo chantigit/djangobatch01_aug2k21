@@ -1,0 +1,28 @@
+Aug24: AbcHealth project name , Have 10 members with one TL(chanti)
+step1: Chanti has to create a repository with his Github account 
+            https://github.com/Chanti555/AbcHealth.git
+step2: Chanti has to create a workspace/folder structure in his local system & commit to URL
+             git config --global user.name "chanti"
+             git config --global user.email "lavudyachanti@gmail.com"
+             git  init
+             git status
+             git add TLClass1.java
+             git status
+             git commit -m "Chanti created TLClass1.java"
+             git remote add origin https://github.com/Chanti555/AbcHealth.git                     (one time)
+             git push -u origin master
+             refresh TL github account & verify
+step3: Share that Repo URL to rest of all 10 TM through mail
+step4: Lavanya is one of the team member & she got mail from TL
+step5: Lavanya has to has to create a workspace/folder structure in her local system & pull that code from URL
+             git config --global user.name "lavanya"
+             git config --global user.email "urmail@gmail.com"
+             git clone <URL>
+             open that project folder & create LavanyaClass2.java file & finish ur work
+	     git  init
+             git status
+             git add LavanyaClass2.java
+             git status
+             git commit -m "Lavanya created LavanyaClass2.java"
+	     git push origin master
+             ask git creadiationals to push
